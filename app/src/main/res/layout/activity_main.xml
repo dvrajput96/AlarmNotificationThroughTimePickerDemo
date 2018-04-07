@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.pc.alarmnotificationthroughtimepickerdemo.MainActivity">
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbnotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Notification" />
+
+            <RadioButton
+                android:id="@+id/rbtoast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toast" />
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btnsettime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="One Time Alarm" />
+
+
+        <Button
+            android:id="@+id/btnrepeattime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Repeating Alarm" />
+
+        <Button
+            android:id="@+id/btntimepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="time picker" />
+
+
+        <TextView
+            android:id="@+id/alarmprompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+</ScrollView>
